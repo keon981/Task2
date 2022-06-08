@@ -120,7 +120,7 @@ h5{
 @media(max-width:768px)
 {
 	.card-item{
-		width: 50%;
+		width: 100%;
 		margin: 0 auto;
 		text-align: center;
 	}
@@ -130,23 +130,41 @@ h5{
 		justify-content: space-around;
 
 	}
-	.card{
-		width: 50%;
-		
+
+	.card p{
+		font-size: 16px;
+		/* width: 80%; */
+		border: 1px solid #000 ;
+		/* margin: 16px; */
+		margin-bottom: 24px;
 	}
 	
 }
-@media(max-width:375px)
+@media(max-width:576px)
 {
+	.card-item{
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+		
+	}
+	.card h3{
+	
+	}
 	.card-list{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		
 	}
-	.card{
-		width: 100%;
-	}	
+
+	.card p{
+		font-size: 16px;
+		/* width: 80%; */
+		border: 1px solid #000 ;
+		margin: 16px;
+		margin-bottom: 24px;
+	}
 }
 .card img{
 	border-radius: 12px 12px 0px 0px;
