@@ -185,7 +185,6 @@ P{
 		margin-top: 16px;
 		margin-bottom: 16px;
 	}
-
 	.logo-item{
 		display: flex;
 		flex-wrap: wrap;
@@ -195,6 +194,7 @@ P{
 	.logo{
 		max-width: 100%;
 		margin-bottom: 24px;
+		padding: 0px 75px 0px;
 	}
 	.wrap{
 		margin-bottom: 60px;
