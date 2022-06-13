@@ -119,8 +119,48 @@ h6{
 P{
 	line-height: 24px;
 }
-
+.topup{
+	height: 71px;
+	width: 71px;
+	color: #FFFFFF;
+	font-weight: bold;
+	border-radius: 50%;
+	background-image: url(https://hellopinpin.github.io/chatTalker/image/top.png);
+	background-size: 71px;
+	top: 85%;
+	right: 48px;
+	position: fixed;
+	z-index: 3;
+}
+@media (max-width: 767px){
+	.topup {
+		width: 50px;
+		height: 50px;
+		background-size: 50px;
+		top: 85%;
+		right: 5%;
+	}
+}
 .header{
+	margin: 0 auto;
+	text-align: center;
+	background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg);
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
+    right: -5;
+    width: 100%;
+    height: 768px;
+    z-index: -10;
+    position: relative;
+    overflow: hidden;
+}
+@media (max-width:767px) {
+	.header{
+		background-image: none;
+	}
+}
+.nav{
 	display: flex;
 	justify-content: space-between;
 	height: 88px;
@@ -129,44 +169,102 @@ P{
 	margin: auto;
 	margin-bottom: 32px;
 }
-.header img{
+.nav img{
 	max-width: 218px;
 }
-.header a{
+.nav a{
 	color: #FFFFFF;
 	border-radius: 22px;
 	background: #FF5D50;
 	padding: 8px 32px 8px;
 }
 @media (max-width:1088px){
-	.header img{
+	.nav img{
 		margin-left: 20px;
 	}
-	.header a{
+	.nav a{
 		margin-right: 20px;
 	}
 }
 @media (max-width:576px){
-	.header img{
+	.nav img{
 		width: 130px;
 	}
-	.header{
+	.nav{
 		border-bottom: 2px solid #F5CA52;
 	}
 }
-.bghome{
-	background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg);
-    background-size: contain;
-    background-position: top right;
-    background-repeat: no-repeat;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 768px;
-    z-index: -10;
-    position: relative;
-    overflow: hidden;
-    padding-top: 88px;
+.topbg{
+	max-width: 1088px;
+    margin: 0 auto;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-bottom: 217px;
+}
+.topbg p{
+	color: #221E1F;
+	opacity: 1;
+	font-size: 20px;
+	text-align: left;
+	margin-bottom: 32px;
+}
+.home-img{
+	flex: 1;
+    padding: 20px;
+    min-width: 360px;
+}
+.home-img img{
+	max-width: 100%;
+}
+.title{
+	margin: 0 auto;
+}
+@media (max-width:1024px) {
+	h1{
+		font-size: 32px;
+		font-weight: bold;
+		line-height: 46px;
+	}
+	h2{
+		font-size: 16px;
+	}
+	.topbg p{
+		font-size: 16px;
+	}
+}
+@media (max-width:767px) {
+	.topbg {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 98px;
+	}
+	.home-img img{
+		margin: 0 auto;
+	}
+	.home-img{
+		max-width: 60%;
+		background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+@media (max-width:576px) {
+	h1{
+		font-size: 32px;
+		font-weight: bold;
+		line-height: 46px;
+	}
+	h2{
+		font-size: 16px;
+	}
+	.topbg p{
+		font-size: 16px;
+	}
 }
 .container{
     max-width: 1088px;
@@ -212,85 +310,7 @@ P{
 		background-size: 135px;
 	}
 }
-.topup{
-	padding: 28px 20px;
-	color: #FFFFFF;
-	font-weight: bold;
-	border-radius: 50%;
-	background-color: #56C4C5;
-	top: 85%;
-	right: 48px;
-	position: fixed;
-	z-index: 3;
-}
-@media (max-width: 767px){
-	.topup {
-		padding: 23px 16px;
-		top: 80%;
-		right: 8%;
-	}
-}
-.topbg{
-	text-align: left;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	margin-bottom: 217px;
-}
-.topbg p{
-	color: #221E1F;
-	opacity: 1;
-	font-size: 20px;
-	text-align: left;
-	margin-bottom: 32px;
-}
-.home-img{
-	flex: 1;
-    padding: 20px;
-    min-width: 360px;
-}
-.home-img img{
-	max-width: 100%;
-}
-.title{
-	margin: 0 auto;
-}
-@media (max-width:1024px) {
-	h1{
-		font-size: 32px;
-		font-weight: bold;
-		line-height: 46px;
-	}
-	h2{
-		font-size: 16px;
-	}
-	.topbg p{
-		font-size: 16px;
-	}
-}
-@media (max-width:768px) {
-	.topbg {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		margin-bottom: 98px;
-	}
-}
-@media (max-width:576px) {
-	h1{
-		font-size: 32px;
-		font-weight: bold;
-		line-height: 46px;
-	}
-	h2{
-		font-size: 16px;
-	}
-	.topbg p{
-		font-size: 16px;
-	}
 
-}
 .wrap{
 	margin-bottom: 100px;
 }
